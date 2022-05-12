@@ -1,0 +1,54 @@
+#footer {
+    background-image: url(../img/footer/bg_footer.png);
+    background-repeat: repeat-x;
+    bottom: 0;
+    color: White;
+    font-size: 9pt;
+    padding: 8px 15px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+}
+#footer .left-footer ul{
+    display: flex;
+}
+#footer .left-footer .item {
+    display: inline;
+    margin-right: 5px;
+}
+#footer .left-footer .item a{
+    display: block;
+    height: 18px;
+    width: 20px;
+    font-size: 20px;
+    color: white;
+    margin-top: -3px;
+}
+#footer .left-footer .item .icon_youtube{
+    margin-right: -3px;
+}
+#footer .right-footer {
+    margin-left: auto;
+    padding-right: 20px;
+}
+#footer .right-footer ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2px;
+}
+#footer .right-footer ul li {
+    border-right: 1px solid #FFBC9B;
+    margin: 0 10px;
+    padding-right: 10px;
+    text-transform: lowercase;
+}
+#footer .right-footer ul li:last-child{
+    border-right: none;
+}
+#footer .right-footer ul li a {
+    color: White;
+}
+#footer .right-footer ul li:hover a {
+    cursor: pointer;
+    text-decoration: underline;
+}
