@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/shopping_cart.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="vendor/css/all.css">
+</head>
+<body>
+    <section id="header">
+        <!-- khối chứa logo -->
+        <div id="logo">
+            <a href="index.html"> <img src="img/header/logo.png" /> </a>
+        </div>
+        <!-- phần liên kết, menu, tìm kiếm,... -->
+        <div class="header_top">
+            <!-- khung tìm kiếm -->
+            <div id="searchform" class="clearfix">
+                <!-- liên kết đăng ký/ login -->
+                <div class="item" id="register"><a href="login.html">đăng nhập / đăng ký</a></div>
+                <!-- khung nhập nội dung tìm kiếm -->
+                <div class="item">
+                    <input class="search_textbox" type="text" value="Search" />
+                    <div class="search_button">
+                        <a href="#"><img src="img/header/searchbtn.png" /></a>
+                    </div>
+                </div>
+            </div>
+            <!-- menu -->
+            <div id="menu" class="clearfix">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="order.html">đặt hàng online</a></li>
+                    <li><a  href="menu.html">menu</a></li>
+                    <li><a href="aboutUs.html">giới thiệu</a></li>
+                    <li><a href="contact.html">liên hệ</a></li>
+                    <li><a href="job.html">tuyển dụng</a></li>
+                    <li class="cartimg">
+                        <a class="menu-active" href="shopping_cart.html">
+                            <img src="img/header/cart.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Ngôn ngữ hiển thị -->
+            <div id="flag">
+                <a><img src="img/header/vi.png" alt="VN" title="Vietnamese" /></a>
+                <a><img src="img/header/uk.png" alt="UK" title="English" /></a>
+                <a><img src="img/header/kor.png" alt="Kr" title="Korean" /> </a>
+                <a><img src="img/header/ja.png" alt="Jp" title="Japanese" /></a>
+            </div>
+        </div>
+    </section>
+    <section id="main">
+        <div id="body_content">
+            <div class="content-title">
+                <h2 class="page_title">Giỏ hàng</h2>
+            </div>
+            <div id="main_shopping_cart">
+                <div class="cart_part_1">
+                    <table class="tb1_cart_order">
+                        <tr>
+                            <th></th>
+                            <th>Sản phẩm</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành Tiền</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/shopping_cart/Glass.png" alt="Glass">
+                            </td>
+                            <td>
+                                <div class="product_name">apple, mint, celery + lime juice</div>
+                                <div class="product_size"> + Extra</div>
+                            </td>
+                            <td><div class="product_price">187,500 VND</div></td>
+                            <td><input class="product_qty" type="text" value="2"></td>
+                            <td><div class="product_price">375,000 VND</div></td>
+                            <td><a href="#" class="btn_close"><i class="fas fa-times-circle"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/shopping_cart/dishes1.png" alt="dishes1">
+                            </td>
+                            <td><div class="product_name">bean and glass noodle salas</div></td>
+                            <td><div class="product_price">225,000 VND</div></td>
+                            <td><input class="product_qty" type="text" value="2"></td>
+                            <td><div class="product_price">450,000 VND</div></td>
+                            <td><a href="#" class="btn_close"><i class="fas fa-times-circle"></i></a></td>
+                        </tr>
+                    </table>    
+                </div>
+                <div class="add_other_pro">
+                    <span>Đặt thêm</span>
+                </div>
+                <div class="cart_part_2">
+                    <div class="related_pro">
+                        <div class="text_title">
+                            <span>Base on your selection, you may be interested in the following items:</span>
+                        </div>
+                        <div class="product_image">
+                            <div class="img_detail">
+                                <img src="img/shopping_cart/dishes2.png" alt="Dishes 2">
+                            </div>
+                            <div class="img_descript">
+                                <div class="title_product">
+                                    <span>beef letture wraps</span>
+                                </div>
+                                <div class="price_product">
+                                    <span>price:</span>
+                                    <b>300,000 VND</b>
+                                </div>
+                                <div class="btn_adder">
+                                    <a href="#" class="btn_submit" type="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discount_code">
+                        <div class="font1colum2">DISCOUNT CODES</div>
+                        <div class="font2colum2">Enter your coupon code if you have one</div>
+                        <div class="input_code">
+                            <input type="text" class="textinput" name="couponcode">
+                            <button class="btn_submit" type="button">SUBMIT</button>
+                        </div>
+                        <div class="font1colum2">GIFTS CARDS</div>
+                        <div class="font2colum2">Enter the gift card code</div>
+                        <div class="input_code">
+                            <input type="text" class="textinput" name="couponcode">
+                            <button class="btn_submit" type="button">SUBMIT</button>
+                        </div>
+                    </div>
+                    <div class="proceed_checkout">
+                        <div class="item">
+                            <div class="title">Subtotal</div>
+                            <div class="price">600,000</div>
+                        </div>
+                        <div class="item">
+                            <div class="title">Voucher</div>
+                            <div class="price">- 50,000</div>
+                        </div>
+                        <div class="item total_price">
+                            <div class="title">Brand Total</div>
+                            <div class="price">550,000</div>
+                        </div>
+                        <div class="item">
+                            <a class="btn_submit" href="checkout.html">Proceed to Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <!-- Thông tin liên hệ -->
+        <div class="left-footer">
+            <ul>
+                <li class="item">@ The Al Fresco’s Group 2019</li>
+                <li class="item"><a class="icon_face" href="#"><i class="fab fa-facebook"></i></a></li>
+                <li class="item"><a class="icon_youtube" href="#"><i class="fab fa-youtube-square"></i></a></li>
+                <li class="item"><a class="icon_app" href="#"><i class="fab fa-app-store"></i></a></li>
+            </ul>
+        </div>
+        <!-- Liên kết trang phụ -->
+        <div class="right-footer">
+            <ul>
+                <li><a href="site_map.html">sơ đồ site</a></li>
+                <li><a href="opportunity.html">nhượng quyền</a></li>
+                <li><a href="policy.html">chính sách bảo mật</a></li>
+                <li><a href="term_condition.html">điều kiện sử dụng</a> </li>
+                <li><a href="office.html">head office</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
